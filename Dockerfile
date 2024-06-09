@@ -62,7 +62,7 @@ RUN adduser \
 
 COPY --from=plik-builder --chown=1000:1000 /go/src/github.com/root-gg/plik/release /home/plik/
 
-EXPOSE 8080
+EXPOSE 8081
 USER plik
 WORKDIR /home/plik/server
 CMD ./plikd
